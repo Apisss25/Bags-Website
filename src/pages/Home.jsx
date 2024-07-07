@@ -94,7 +94,7 @@ const Home = () => {
             <img
               src="../../public/images/bag-hero-1.jpeg"
               alt=""
-              className="h-[180px] w-[180px] rounded-[20px] object-cover ring-[3px] ring-white ring-offset-[6px] ring-offset-black m:h-[220px] m:w-[150px] sm:h-[250px] sm:w-[180px] md:h-[320px] md:w-[400px] lg:h-[450px] lg:w-[500px]"
+              className="h-[180px] w-[180px] rounded-[20px] object-cover ring-[3px] ring-white ring-offset-[6px] ring-offset-black m:h-[220px] m:w-[150px] sm:h-[250px] sm:w-[180px] md:h-[320px] md:w-[400px] lg:h-[440px] lg:w-[350px]"
             />
             <img
               src="../../public/images/bag-hero-2.jpeg"
