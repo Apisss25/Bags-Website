@@ -14,7 +14,7 @@ const Home = () => {
   const dataCard = [
     {
       id: 1,
-      img: "../../public/images/bag-4.jpeg",
+      img: "./public/images/bag-4.jpg",
       people: "adam smith",
       own: "co owner",
       description:
@@ -22,7 +22,7 @@ const Home = () => {
     },
     {
       id: 2,
-      img: "../../public/images/bag-5.jpeg",
+      img: "./public/images/bag-5.jpg",
       people: "adam smith",
       own: "co owner",
       description:
@@ -30,7 +30,7 @@ const Home = () => {
     },
     {
       id: 3,
-      img: "../../public/images/bag-6.jpeg",
+      img: "./public/images/bag-6.jpg",
       people: "adam smith",
       own: "co owner",
       description:
@@ -38,7 +38,7 @@ const Home = () => {
     },
     {
       id: 4,
-      img: "../../public/images/bag-7.jpeg",
+      img: "./public/images/bag-7.jpg",
       people: "adam smith",
       own: "co owner",
       description:
@@ -46,7 +46,7 @@ const Home = () => {
     },
     {
       id: 5,
-      img: "../../public/images/bag-8.jpeg",
+      img: "./public/images/bag-8.jpg",
       people: "adam smith",
       own: "co owner",
       description:
@@ -54,7 +54,7 @@ const Home = () => {
     },
     {
       id: 6,
-      img: "../../public/images/bag-4.jpeg",
+      img: "./public/images/bag-4.jpg",
       people: "adam smith",
       own: "co owner",
       description:
@@ -64,15 +64,15 @@ const Home = () => {
   const cardImage = [
     {
       id: 1,
-      img: "../../public/images/bag-4.jpeg",
+      img: "./public/images/bag-4.jpg",
     },
     {
       id: 2,
-      img: "../../public/images/bag-5.jpeg",
+      img: "./public/images/bag-5.jpg",
     },
     {
       id: 3,
-      img: "../../public/images/bag-6.jpeg",
+      img: "./public/images/bag-6.jpg",
     },
   ];
   return (
@@ -92,12 +92,12 @@ const Home = () => {
           </div>
           <div className="relative pt-[50px] md:pr-[100px]">
             <img
-              src="../../public/images/bag-hero-1.jpeg"
+              src="./public/images/bag-hero-1.jpg"
               alt=""
-              className="h-[180px] w-[180px] rounded-[20px] object-cover ring-[3px] ring-white ring-offset-[6px] ring-offset-black m:h-[220px] m:w-[150px] sm:h-[250px] sm:w-[180px] md:h-[320px] md:w-[400px] lg:h-[440px] lg:w-[350px]"
+              className="h-[180px] w-[180px] rounded-[20px] object-cover ring-[3px] ring-white ring-offset-[6px] ring-offset-black m:h-[220px] m:w-[150px] sm:h-[250px] sm:w-[180px] md:h-[320px] md:w-[400px] lg:h-[450px] lg:w-[500px]"
             />
             <img
-              src="../../public/images/bag-hero-2.jpeg"
+              src="./public/images/bag-hero-2.jpg"
               alt=""
               className="absolute -bottom-[40px] -left-[50px] hidden size-[100px] rounded-[20px] border-[3px] border-slate-100 md:-bottom-[50px] md:-left-[80px] md:block md:size-[150px] lg:size-[200px]"
             />
@@ -108,7 +108,7 @@ const Home = () => {
         <div className="flex h-screen flex-col items-center justify-evenly bg-[#FFFCF5] md:flex-row md:gap-[10px] lg:gap-[30px] xl:gap-[50px]">
           <div className="pt-[75px] md:pt-0">
             <img
-              src="../../public/images/bag-3.jpeg"
+              src="./public/images/bag-3.jpg"
               alt=""
               className="w-[280px] rounded-[20px] ring-[3px] ring-black ring-offset-[4px] ring-offset-[#FFFCF5] m:w-[300px] md:w-[350px] lg:w-[450px] xl:w-[500px]"
             />
@@ -137,7 +137,7 @@ const Home = () => {
         </div>
       </section>
       <section id="body-2-section">
-        <div className="mt-[50px] h-screen bg-[#FFFCF5] sm:mt-[50px] md:mt-[0px] ">
+        <div className="mt-[50px] h-screen bg-[#FFFCF5] sm:mt-[50px] md:mt-[0px]">
           <div className="flex items-center justify-between px-[30px] m:px-[50px] sm:px-[80px] md:px-[100px] lg:px-[120px]">
             <h1 className="font-oswald text-[30px] font-[500] uppercase md:text-[40px] lg:text-[50px]">
               new arrivals
@@ -160,7 +160,7 @@ const Home = () => {
         </div>
       </section>
       <section id="body-3-section">
-        <div className="h-[500px] bg-[#FFFCF5]">
+        <div className="h-[550px] bg-[#FFFCF5]">
           <h1 className="text-center font-oswald text-[50px] font-[500] uppercase">
             reviews
           </h1>
@@ -209,25 +209,36 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* <section id="last-section">
-        <div className="bg-[#FFFCF5] h-[540px] pt-[50px]">
-          <div className="flex items-center justify-start relative bg-[#121713] w-full h-[375px] ">
+      <section id="last-section">
+        <div className="h-[540px] bg-[#FFFCF5] pt-[50px]">
+          <div className="relative flex h-[375px] w-full items-center justify-start bg-[#121713]">
             <div className="p-[60px] pl-[120px]">
-              <h1 className="font-oswald uppercase text-[45px] font-[500] py-[15px] text-white ">get instan discount</h1>
-              <p className="font-raleway text-[16px] capitalize pb-[50px] text-white">
-                subscribe our newsletter and get all lastest news about lastest <br /> product,promotions,offers,and discount
+              <h1 className="py-[15px] font-oswald text-[45px] font-[500] uppercase text-white">
+                get instan discount
+              </h1>
+              <p className="pb-[50px] font-raleway text-[16px] capitalize text-white">
+                subscribe our newsletter and get all lastest news about lastest{" "}
+                <br /> product,promotions,offers,and discount
               </p>
 
-              <div className="w-[420px] h-[60px] bg-white flex items-center px-[10px] rounded-[12px] gap-[15px] ">
-                <input type="email" placeholder="input your email here" className="w-[280px] h-[38px] ring-[2px] focus:border-black ring-white ring-offset-[5px] ring-offset-black rounded-[5px] px-[10px] " />
+              <div className="flex h-[60px] w-[420px] items-center gap-[15px] rounded-[12px] bg-white px-[10px]">
+                <input
+                  type="email"
+                  placeholder="input your email here"
+                  className="h-[38px] w-[280px] rounded-[5px] px-[10px] ring-[2px] ring-white ring-offset-[5px] ring-offset-black focus:border-black"
+                />
                 <Button title="subscribe" />
               </div>
             </div>
 
-            <img src="../../public/images/bag-9.png" alt="" className="absolute right-[50px] bottom-[20px]" />
+            <img
+              src="./public/images/bag-9.png"
+              alt=""
+              className="absolute bottom-[20px] right-[50px]"
+            />
           </div>
         </div>
-      </section> */}
+      </section>
     </>
   );
 };
