@@ -150,7 +150,7 @@ const Home = () => {
               <div className="h-[2px] w-0 bg-[#fad38b] transition-all duration-500 group-hover:w-full"></div>
             </Link>
           </div>
-          <div className="flex flex-col flex-wrap items-center gap-[20px] py-[30px] m:flex-row m:justify-evenly m:gap-[30px] m:px-[30px] m:pt-[50px] md:gap-[50px]">
+          <div className="flex flex-col flex-wrap items-center gap-[20px] py-[30px] m:flex-row m:justify-evenly max-[375px]:gap-[30px] m:gap-[30px] m:px-[30px] m:pt-[50px] md:gap-[50px]">
             {cardImage.map((item) => (
               <div key={item.id}>
                 <Card image={item.img} />
@@ -160,7 +160,7 @@ const Home = () => {
         </div>
       </section>
       <section id="body-3-section ">
-        <div className="mm:mt-[200px] ml:mt-[0px] h-[550px] bg-[#FFFCF5] max-[640px]:h-[700px] max-[529px]:mt-[280px] m:mt-[470px] md:mt-[290px]">
+        <div className="h-[550px] bg-[#FFFCF5] max-[640px]:h-[700px] max-[529px]:mt-[280px] m:mt-[470px] mm:mt-[200px] md:mt-[290px] ml:mt-[0px]">
           <h1 className="text-center font-oswald text-[40px] font-[500] uppercase md:text-[40px] lg:text-[50px]">
             reviews
           </h1>
@@ -170,7 +170,6 @@ const Home = () => {
               modules={[Autoplay]}
               slidesPerView={1}
               spaceBetween={5}
-              
               autoplay={{
                 delay: "3000",
               }}
@@ -184,18 +183,18 @@ const Home = () => {
                 >
                   <div
                     key={item.id}
-                    className="my-[60px] flex h-[250px] items-center justify-evenly max-[640px]:h-[400px] max-[640px]:max-w-[300px] max-[640px]:flex-col m:max-w-[300px] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[1000px]"
+                    className="my-[60px] flex h-[250px] items-center justify-evenly max-[640px]:h-[450px] max-[640px]:max-w-[300px] max-[640px]:flex-col max-[375px]:max-w-[220px] m:max-w-[300px] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[1000px]"
                   >
                     <img
                       src={item.img}
                       alt=""
-                      className="h-[250px] w-[250px] object-cover max-[640px]:w-[300px]"
+                      className="sm:h-[250px] sm:w-[250px] object-cover max-[375px]:h-[250px] max-[640px]:w-[300px]"
                     />
-                    <div className="h-[250px] w-[600px] bg-[#F7F6BB] px-[60px] py-[50px] max-[640px]:w-[300px] max-[640px]:px-[20px] max-[640px]:py-[10px]">
-                      <h1 className="font-popins text-[23px] font-[600] capitalize">
+                    <div className="h-[250px] w-[600px] bg-[#F7F6BB] px-[60px] py-[50px] max-[640px]:w-[300px] max-[640px]:px-[20px] max-[640px]:py-[10px] max-[375px]:max-w-[220px]">
+                      <h1 className="font-popins text-[23px] max-[375px]:text-[18px] font-[600] capitalize">
                         {item.people}
                       </h1>
-                      <p className="py-[15px] font-raleway max-[640px]:py-[5px]">
+                      <p className="py-[15px] font-raleway max-[640px]:py-[5px] max-[375px]:text-[14px]">
                         {item.description}
                       </p>
                       <i className="font-raleway">{item.own}</i>
@@ -207,7 +206,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* <section id="last-section">
+      <section id="last-section">
         <div className="h-[540px] bg-[#FFFCF5] pt-[50px]">
           <div className="relative flex h-[375px] w-full items-center justify-start bg-[#121713]">
             <div className="p-[60px] pl-[120px]">
@@ -236,7 +235,7 @@ const Home = () => {
             />
           </div>
         </div>
-      </section> */}
+      </section>
     </>
   );
 };
