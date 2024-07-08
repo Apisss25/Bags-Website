@@ -7,7 +7,7 @@ const Card = (props) => {
       <img
         src={image}
         alt=""
-        className="h-[220px] w-[150px] rounded-lg object-cover m:h-[270px] m:w-[220px] md:h-[320px] md:w-[250px] lg:h-[350px] lg:w-[270px]"
+        className="h-[220px] w-[190px] rounded-lg object-cover m:h-[270px] m:w-[220px] md:h-[320px] md:w-[250px] lg:h-[350px] lg:w-[270px]"
       />
     </div>
   );

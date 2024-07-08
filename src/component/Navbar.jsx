@@ -46,7 +46,7 @@ const Navbar = () => {
         <div className="pl-[20px]">
           <h1 className="flex items-center font-popins text-[20px] font-semibold md:text-[23px]">
             <Link
-              to={"/"}
+              to={"/Bags-Website"}
               onClick={() => {
                 setOpen(false);
               }}
