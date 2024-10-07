@@ -1,13 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Button from "../component/Button";
-
-import "aos/dist/aos.css";
-import AOS from "aos";
 const MoreSection = () => {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
   return (
     <>
       <div className="h-[400px] bg-[#FFFCF5] max-[375px]:mt-[120px] m:mt-[170px] sm:mt-[150px] sm:h-[500px] md:mt-[250px] md:h-[540px] lg:mt-[50px]">
