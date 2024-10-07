@@ -1,7 +1,7 @@
 export const dataCard = [
   {
     id: 1,
-    img: "./public/images/bag-4.jpg",
+    img: "./images/bag-4.jpg",
     people: "adam smith",
     own: "co owner",
     description:
@@ -9,7 +9,7 @@ export const dataCard = [
   },
   {
     id: 2,
-    img: "./public/images/bag-5.jpg",
+    img: "./images/bag-5.jpg",
     people: "adam smith",
     own: "co owner",
     description:
@@ -17,7 +17,7 @@ export const dataCard = [
   },
   {
     id: 3,
-    img: "./public/images/bag-6.jpg",
+    img: "./images/bag-6.jpg",
     people: "adam smith",
     own: "co owner",
     description:
@@ -25,7 +25,7 @@ export const dataCard = [
   },
   {
     id: 4,
-    img: "./public/images/bag-7.jpg",
+    img: "./images/bag-7.jpg",
     people: "adam smith",
     own: "co owner",
     description:
@@ -33,7 +33,7 @@ export const dataCard = [
   },
   {
     id: 5,
-    img: "./public/images/bag-8.jpg",
+    img: "./images/bag-8.jpg",
     people: "adam smith",
     own: "co owner",
     description:
@@ -41,7 +41,7 @@ export const dataCard = [
   },
   {
     id: 6,
-    img: "./public/images/bag-4.jpg",
+    img: "./images/bag-4.jpg",
     people: "adam smith",
     own: "co owner",
     description:
@@ -98,4 +98,3 @@ export const ListFooter2 = [
     list: "Instagram",
   },
 ];
-
