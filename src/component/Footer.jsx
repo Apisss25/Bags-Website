@@ -4,28 +4,58 @@ const Footer = () => {
   return (
     <section className="bg-[#FFFCF5]">
       <div className="flex items-start justify-evenly pb-[50px]">
-        <h1 className="font-popins text-[20px] font-bold m:text-[22px] sm:text-[25px] md:text-[28px] lg:text-[30px]">
+        <h1
+          className="font-popins text-[20px] font-bold m:text-[22px] sm:text-[25px] md:text-[28px] lg:text-[30px]"
+          data-aos="fade-down"
+          data-aos-duration="800"
+          data-aos-delay="200"
+          data-aos-easing="ease-in-out"
+        >
           Bags...
         </h1>
         <div className="text-center">
-          <h1 className="font-popins text-[14px] font-[700] capitalize m:text-[15px] sm:text-[20px] md:text-[22px] lg:text-[24px]">
+          <h1
+            className="font-popins text-[14px] font-[700] capitalize m:text-[15px] sm:text-[20px] md:text-[22px] lg:text-[24px]"
+            data-aos="fade-down"
+            data-aos-duration="800"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+          >
             menu
           </h1>
           {ListFooter1.map((item) => (
             <ul key={item.id} className="pt-[5px]">
-              <li className="cursor-pointer py-[7px] font-raleway text-[11px] sm:text-[14px] md:text-[16px] lg:text-[18px]">
+              <li
+                className="cursor-pointer py-[7px] font-raleway text-[11px] sm:text-[14px] md:text-[16px] lg:text-[18px]"
+                data-aos={item.dataAos}
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-easing="ease-in-out"
+              >
                 {item.list}
               </li>
             </ul>
           ))}
         </div>
         <div className="text-center">
-          <h1 className="font-popins text-[14px] font-[700] capitalize m:text-[15px] sm:text-[20px] md:text-[22px] lg:text-[24px]">
+          <h1
+            className="font-popins text-[14px] font-[700] capitalize m:text-[15px] sm:text-[20px] md:text-[22px] lg:text-[24px]"
+            data-aos="fade-down"
+            data-aos-duration="800"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+          >
             connect
           </h1>
           {ListFooter2.map((item) => (
             <ul key={item.id} className="pt-[5px]">
-              <li className="cursor-pointer py-[7px] font-raleway text-[11px] sm:text-[14px] md:text-[16px] lg:text-[18px]">
+              <li
+                className="cursor-pointer py-[7px] font-raleway text-[11px] sm:text-[14px] md:text-[16px] lg:text-[18px]"
+                data-aos={item.dataAos}
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-easing="ease-in-out"
+              >
                 {item.list}
               </li>
             </ul>
