@@ -18,24 +18,24 @@ const Navbar = () => {
   const ListNav = [
     {
       id: 1,
-      title: "Product",
-      Link: "/product",
+      title: "About",
+      href: "#About",
     },
 
     {
       id: 2,
-      title: "Contact",
-      Link: "/contact",
+      title: "Product",
+      href: "#Product",
     },
     {
       id: 3,
-      title: "Service",
-      Link: "/service",
+      title: "Reviews",
+      href: "#Review",
     },
     {
       id: 4,
       title: "More",
-      Link: "/more",
+      href: "#More",
     },
   ];
   return (
@@ -45,14 +45,14 @@ const Navbar = () => {
       <div className="flex items-center justify-between p-[11px] md:p-[13px]">
         <div className="pl-[20px]">
           <h1 className="flex items-center font-popins text-[20px] font-semibold md:text-[23px]">
-            <Link
-              to={"/Bags-Website/"}
+            <a
+              href="#Home"
               onClick={() => {
                 setOpen(false);
               }}
             >
               Bags...
-            </Link>
+            </a>
           </h1>
         </div>
         <div
@@ -75,14 +75,14 @@ const Navbar = () => {
               <li
                 className={`px-[80px] py-[30px] md:px-0 md:py-0 md:group-hover:bg-transparent ${scroll ? "border-white group-hover:bg-[#fff3dd]" : "border-none group-hover:bg-[#505050]"} border-[1px] md:border-none`}
               >
-                <Link
-                  to={link.Link}
+                <a
+                  href={link.href}
                   onClick={() => setOpen(!open)}
                   className="font-md font-popins text-[12px] group-hover:font-black md:text-[14px] lg:text-[16px]"
                 >
                   {link.title}
                   <div className="h-[2px] w-0 bg-[#fad38b] transition-all duration-500 group-hover:w-full"></div>
-                </Link>
+                </a>
               </li>
             </div>
           ))}

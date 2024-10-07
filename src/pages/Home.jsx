@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../component/Button";
 import { Link } from "react-router-dom";
 import Card from "../component/Card";
+import { dataCard, cardImage } from "../data/Data";
 import { FaArrowRight } from "react-icons/fa";
 import { Autoplay, Pagination } from "swiper/modules";
 
@@ -11,73 +12,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const Home = () => {
-  const dataCard = [
-    {
-      id: 1,
-      img: "./public/images/bag-4.jpg",
-      people: "adam smith",
-      own: "co owner",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloribus voluptatibus aliquid officiis. Incidunt, voluptatum.",
-    },
-    {
-      id: 2,
-      img: "./public/images/bag-5.jpg",
-      people: "adam smith",
-      own: "co owner",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloribus voluptatibus aliquid officiis. Incidunt, voluptatum.",
-    },
-    {
-      id: 3,
-      img: "./public/images/bag-6.jpg",
-      people: "adam smith",
-      own: "co owner",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloribus voluptatibus aliquid officiis. Incidunt, voluptatum.",
-    },
-    {
-      id: 4,
-      img: "./public/images/bag-7.jpg",
-      people: "adam smith",
-      own: "co owner",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloribus voluptatibus aliquid officiis. Incidunt, voluptatum.",
-    },
-    {
-      id: 5,
-      img: "./public/images/bag-8.jpg",
-      people: "adam smith",
-      own: "co owner",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloribus voluptatibus aliquid officiis. Incidunt, voluptatum.",
-    },
-    {
-      id: 6,
-      img: "./public/images/bag-4.jpg",
-      people: "adam smith",
-      own: "co owner",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloribus voluptatibus aliquid officiis. Incidunt, voluptatum.",
-    },
-  ];
-  const cardImage = [
-    {
-      id: 1,
-      img: "./public/images/bag-4.jpg",
-    },
-    {
-      id: 2,
-      img: "./public/images/bag-5.jpg",
-    },
-    {
-      id: 3,
-      img: "./public/images/bag-6.jpg",
-    },
-  ];
   return (
     <>
-      <section id="Hero-section">
+      <section id="Home">
         <div className="flex h-screen flex-col-reverse items-center justify-evenly bg-[#121713] md:flex-row md:justify-evenly">
           <div className="px-[30px] md:px-[80px] lg:px-[130px]">
             <h1 className="py-[10px] font-oswald text-[28px] font-[600] uppercase text-white md:pb-[20px] md:text-[45px] md:font-[600] lg:text-[75px]">
@@ -94,7 +31,7 @@ const Home = () => {
             <img
               src="./public/images/bag-hero-1.jpg"
               alt=""
-              className="h-[180px] w-[180px] rounded-[20px] object-cover ring-[3px] ring-white ring-offset-[6px] ring-offset-black sm:h-[250px] sm:w-[180px] md:h-[320px] md:w-[400px] lg:h-[450px] lg:w-[600px] m:h-[220px] m:w-[150px]"
+              className="h-[180px] w-[180px] rounded-[20px] object-cover ring-[3px] ring-white ring-offset-[6px] ring-offset-black m:h-[220px] m:w-[150px] sm:h-[250px] sm:w-[180px] md:h-[320px] md:w-[400px] lg:h-[450px] lg:w-[600px]"
             />
             <img
               src="./public/images/bag-hero-2.jpg"
@@ -104,20 +41,20 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id="body-1-section">
+      <section id="About">
         <div className="flex h-screen flex-col items-center justify-evenly bg-[#FFFCF5] md:flex-row md:gap-[10px] lg:gap-[30px] xl:gap-[50px]">
           <div className="pt-[75px] md:pt-0">
             <img
               src="./public/images/bag-3.jpg"
               alt=""
-              className="w-[280px] rounded-[20px] ring-[3px] ring-black ring-offset-[4px] ring-offset-[#FFFCF5] md:w-[350px] lg:w-[450px] xl:w-[500px] m:w-[300px]"
+              className="w-[280px] rounded-[20px] ring-[3px] ring-black ring-offset-[4px] ring-offset-[#FFFCF5] m:w-[300px] md:w-[350px] lg:w-[450px] xl:w-[500px]"
             />
           </div>
           <div className="pb-[10px] md:pb-[30px]">
             <h1 className="pb-[10px] text-center font-neue text-[40px] sm:text-[45px] md:text-left md:text-[60px] lg:text-[70px]">
               ABOUT US
             </h1>
-            <article className="font-quicksand h-[150px] w-[280px] overflow-scroll rounded-[20px] bg-[#F7F6BB] px-[15px] text-[12px] ring-[3px] ring-black ring-offset-[4px] ring-offset-[#FFFCF5] sm:w-[400px] sm:text-[14px] md:h-[180px] md:w-[320px] md:px-[20px] md:pb-[30px] md:text-[16px] lg:h-[230px] lg:w-[450px] xl:h-[250px] xl:w-[500px] xl:overflow-hidden m:w-[300px]">
+            <article className="font-quicksand h-[150px] w-[280px] overflow-scroll rounded-[20px] bg-[#F7F6BB] px-[15px] text-[12px] ring-[3px] ring-black ring-offset-[4px] ring-offset-[#FFFCF5] m:w-[300px] sm:w-[400px] sm:text-[14px] md:h-[180px] md:w-[320px] md:px-[20px] md:pb-[30px] md:text-[16px] lg:h-[230px] lg:w-[450px] xl:h-[250px] xl:w-[500px] xl:overflow-hidden">
               <p className="py-[10px] md:py-[25px]">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
                 hic fugit est, tenetur facilis quas repellendus exercitationem
@@ -136,11 +73,11 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id="body-2-section">
+      <section id="Product" className="scroll-mt-[80px]">
         <div className="mt-[50px] h-screen bg-[#FFFCF5] sm:mt-[50px] md:mt-[0px]">
-          <div className="flex items-center justify-between px-[30px] sm:px-[80px] md:px-[100px] lg:px-[120px] m:px-[50px]">
+          <div className="flex items-center justify-between px-[30px] m:px-[50px] sm:px-[80px] md:px-[100px] lg:px-[120px]">
             <h1 className="font-oswald text-[30px] font-[500] uppercase md:text-[40px] lg:text-[50px]">
-              new arrivals
+              Product
             </h1>
             <Link
               to={"/product"}
@@ -150,7 +87,7 @@ const Home = () => {
               <div className="h-[2px] w-0 bg-[#fad38b] transition-all duration-500 group-hover:w-full"></div>
             </Link>
           </div>
-          <div className="max-[375px]:gap-[30px] flex flex-col flex-wrap items-center gap-[20px] py-[30px] md:gap-[50px] m:flex-row m:justify-evenly m:gap-[30px] m:px-[30px] m:pt-[50px]">
+          <div className="flex flex-col flex-wrap items-center gap-[20px] py-[30px] max-[375px]:gap-[30px] m:flex-row m:justify-evenly m:gap-[30px] m:px-[30px] m:pt-[50px] md:gap-[50px]">
             {cardImage.map((item) => (
               <div key={item.id}>
                 <Card image={item.img} />
@@ -159,8 +96,11 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id="body-3-section ">
-        <div className="max-[640px]:h-[700px] max-[529px]:mt-[280px] h-[550px] bg-[#FFFCF5] md:mt-[280px] m:mt-[480px] mm:mt-[200px] ml:mt-[0px]">
+      <section
+        id="Review"
+        className="scroll-mt-[100px] max-[640px]:scroll-mt-[70px]"
+      >
+        <div className="h-[550px] bg-[#FFFCF5] max-[640px]:h-[700px] max-[529px]:mt-[280px] m:mt-[480px] mm:mt-[200px] md:mt-[280px] ml:mt-[0px]">
           <h1 className="text-center font-oswald text-[40px] font-[500] uppercase md:text-[40px] lg:text-[50px]">
             reviews
           </h1>
@@ -183,18 +123,18 @@ const Home = () => {
                 >
                   <div
                     key={item.id}
-                    className="max-[640px]:h-[450px] max-[640px]:max-w-[300px] max-[640px]:flex-col max-[375px]:max-w-[220px] my-[60px] flex items-center justify-evenly sm:h-[250px] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[1000px] m:max-w-[300px]"
+                    className="my-[60px] flex items-center justify-evenly max-[640px]:h-[450px] max-[640px]:max-w-[300px] max-[640px]:flex-col max-[375px]:max-w-[220px] m:max-w-[300px] sm:h-[250px] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[1000px]"
                   >
                     <img
                       src={item.img}
                       alt=""
-                      className="max-[640px]:w-[250px] max-[640px]:h-[250px] object-cover sm:h-[250px] sm:w-[250px]"
+                      className="object-cover max-[640px]:h-[250px] max-[640px]:w-[250px] sm:h-[250px] sm:w-[250px]"
                     />
-                    <div className="max-[640px]:h-[250px] max-[640px]:w-[250px] max-[640px]:px-[20px] max-[640px]:py-[10px] max-[375px]:max-w-[220px] w-[600px] bg-[#F7F6BB] px-[60px] py-[50px] sm:h-[250px]">
-                      <h1 className="max-[375px]:text-[18px] font-popins text-[23px] font-[600] capitalize">
+                    <div className="w-[600px] bg-[#F7F6BB] px-[60px] py-[50px] max-[640px]:h-[250px] max-[640px]:w-[250px] max-[640px]:px-[20px] max-[640px]:py-[10px] max-[375px]:max-w-[220px] sm:h-[250px]">
+                      <h1 className="font-popins text-[23px] font-[600] capitalize max-[375px]:text-[18px]">
                         {item.people}
                       </h1>
-                      <p className="max-[640px]:py-[5px] max-[375px]:text-[14px] py-[15px] font-raleway">
+                      <p className="py-[15px] font-raleway max-[640px]:py-[5px] max-[375px]:text-[14px]">
                         {item.description}
                       </p>
                       <i className="font-raleway">{item.own}</i>
@@ -206,24 +146,26 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      <section id="last-section">
-        <div className="max-[375px]:mt-[120px] h-[540px] bg-[#FFFCF5] sm:mt-[150px] md:mt-[250px] lg:mt-[50px] m:mt-[170px]">
-          <div className="max-[375px]:h-[280px] max-[375px]:flex-col-reverse flex w-full items-center justify-start bg-[#121713] md:h-[330px] lg:h-[375px] lg:flex-row xl:gap-[50px] m:h-[300px] m:flex-col-reverse">
-            <div className="max-[375px]:text-center max-[375px]:mb-[30px] md:mb-[50px] lg:p-[60px] lg:pl-[120px] lg:text-left m:mb-[30px] m:text-center">
-              <h1 className="py-[15px] font-oswald text-[25px] font-[500] uppercase text-white md:text-[40px] lg:text-[45px] m:text-[30px]">
+      <section
+        id="More"
+        className="scroll-mt-[150px] max-[640px]:scroll-mt-[250px]"
+      >
+        <div className="h-[400px] sm:h-[500px] md:h-[540px] bg-[#FFFCF5] max-[375px]:mt-[120px] m:mt-[170px] sm:mt-[150px] md:mt-[250px] lg:mt-[50px]">
+          <div className="flex w-full items-center justify-start bg-[#121713] max-[375px]:h-[280px] max-[375px]:flex-col-reverse m:h-[300px] m:flex-col-reverse md:h-[330px] lg:h-[375px] lg:flex-row xl:gap-[50px]">
+            <div className="max-[375px]:mb-[30px] max-[375px]:text-center m:mb-[30px] m:text-center md:mb-[50px] lg:p-[60px] lg:pl-[120px] lg:text-left">
+              <h1 className="py-[15px] font-oswald text-[25px] font-[500] uppercase text-white m:text-[30px] md:text-[40px] lg:text-[45px]">
                 get instan discount
               </h1>
-              <p className="pb-[20px] font-raleway text-[11px] capitalize text-white md:text-[14px] lg:pb-[50px] lg:text-[16px] m:pb-[20px] m:text-[11px]">
+              <p className="pb-[20px] font-raleway text-[11px] capitalize text-white m:pb-[20px] m:text-[11px] md:text-[14px] lg:pb-[50px] lg:text-[16px]">
                 subscribe our newsletter and get all lastest news about lastest{" "}
                 <br /> product,promotions,offers,and discount
               </p>
 
-              <div className="flex h-[45px] w-[285px] items-center gap-[15px] rounded-[12px] bg-white px-[10px] md:h-[60px] md:w-[400px] m:h-[45px] m:w-[330px] max-[375px]:mx-auto">
+              <div className="flex h-[45px] w-[285px] items-center gap-[15px] rounded-[12px] bg-white px-[10px] max-[375px]:mx-auto m:h-[45px] m:w-[330px] md:h-[60px] md:w-[400px]">
                 <input
                   type="email"
                   placeholder="input your email here"
-                  className="h-[28px] m:w-[280px] max-[375px]:w-[190px] rounded-[5px] px-[10px] ring-[2px] ring-white ring-offset-[5px] ring-offset-black focus:border-black md:h-[38px] md:w-[280px]"
+                  className="h-[28px] rounded-[5px] px-[10px] ring-[2px] ring-white ring-offset-[5px] ring-offset-black focus:border-black max-[375px]:w-[190px] m:w-[280px] md:h-[38px] md:w-[280px]"
                 />
                 <Button title="Send" />
               </div>
@@ -232,7 +174,7 @@ const Home = () => {
             <img
               src="./public/images/bag-9.png"
               alt=""
-              className="max-[375px]:w-[250px] md:w-[380px] lg:w-[420px] xl:w-[430px] m:w-[280px]"
+              className="max-[375px]:w-[250px] m:w-[280px] md:w-[380px] lg:w-[420px] xl:w-[430px]"
             />
           </div>
         </div>
